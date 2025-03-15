@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+@custom-variant purple (&:where(.purple, .purple *));
+
+@theme{
+    --font-lea: "League Spartan", "sans-serif";
+
+    /* theme1 */
+    --color-mainbg: hsl(222, 26%, 31%);
+    --color-togglebg: hsl(223, 31%, 20%);
+    --color-screenbg: hsl(224, 36%, 15%);
+    --color-darkbluebg: hsl(225, 21%, 49%);
+    --color-darkblueshadow: hsl(224, 28%, 35%);
+    --color-redtog: hsl(6, 63%, 50%);
+    --color-darkredshadow: hsl(6, 70%, 34%);
+    --color-orangekeybg: hsl(30, 25%, 89%);
+    --color-orangeshadow: hsl(28, 16%, 65%);
+    --color-graysihblue: hsl(221, 14%, 31%);
+
+    /* theme2 */
+    --color-lightbg: hsl(0, 0%, 90%);
+    --color-lighttogglebg: hsl(0, 5%, 81%);
+    --color-lightscreenbg: hsl(0, 0%, 93%);
+    --color-lightbluekeybg: hsl(185, 42%, 37%);
+    --color-lightbluekeyshadow: hsl(185, 58%, 25%);
+    --color-lightredkeybg: hsl(25, 98%, 40%);
+    --color-lightredkeyshadow: hsl(25, 99%, 27%);
+    --color-lightkeybg: hsl(45, 7%, 89%);
+    --color-lightkeyshadow: hsl(35, 11%, 61%);
+    --color-grayishyellow: hsl(60, 10%, 19%);
+
+    /* theme3 */
+    --color-purplebg: hsl(268, 75%, 9%);
+    --color-purpletogglebg: hsl(268, 71%, 12%);
+    --color-darkviolet: hsl(281, 89%, 26%);
+    --color-darkvioletshadow: hsl(285, 91%, 52%);
+    --color-purecyan: hsl(176, 100%, 44%);
+    --color-cyanshadow: hsl(177, 92%, 70%);
+    --color-violetkey: hsl(268, 47%, 21%);
+    --color-violetbg: hsl(290, 70%, 36%);
+    --color-yellow: hsl(52, 100%, 62%);
+    --color-violetdarkblue: hsl(198, 20%, 13%);
+
+
+    --breakpoint-3xl: 1441px;
+    --shadow-customblue: hsl(224, 28%, 35%) 0px 4px;
+    --shadow-customred: hsl(6, 70%, 34%) 0px 4px;
+    --shadow-customwhite: hsl(28, 16%, 65%) 0px 4px;
+
+    --shadow-lightcustomblue: hsl(185, 58%, 25%) 0px 4px;
+    --shadow-lightcustomred: hsl(6, 70%, 34%) 0px 4px;
+    --shadow-lightcustomwhite: hsl(28, 16%, 65%) 0px 4px;
+
+    --shadow-purplecustomblue: hsl(285, 91%, 52%) 0px 4px;
+    --shadow-purplecustomred: hsl(177, 92%, 70%) 0px 4px;
+    --shadow-purplecustomwhite: hsl(281, 89%, 26%) 0px 4px;
+}
+
+.checkbox-wrapper-2 .custom-toggle {
+    background-color: #dfe1e4;
+    border-radius: 72px;
+    height: 18px;
+    width: 60px; /* Zwiększona szerokość dla 3 stanów */
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.1s ease-out;
+}
+
+.checkbox-wrapper-2 .toggle-slider {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.1s ease-out;
+}
+
+/* Kolory dla poszczególnych stanów */
+.checkbox-wrapper-2 .custom-toggle.state-1 {
+    background-color: #FFA500; /* Pomarańczowy dla stanu środkowego */
+}
+
+.checkbox-wrapper-2 .custom-toggle.state-2 {
+    background-color: #A445ED; /* Fioletowy dla stanu prawego */
+}
+
+body.default {
+    background-color: hsl(222, 26%, 31%);
+}
+
+body.light {
+    background-color: hsl(0, 0%, 90%);
+}
+
+body.purple {
+    background-color: hsl(268, 75%, 9%);
+}
