@@ -24,7 +24,7 @@ const Theme = ({ activeTheme, toggleTheme }) => {
   }
 
   return (
-    <div className='flex justify-center lg:pt-[96px] pt-[30px]'>
+    <div className='flex justify-center lg:pt-[36px] pt-[30px]'>
       <div className='flex items-end justify-between min-w-[320px] lg:min-w-[540px]'>
         <div>
           <h1 className='font-lea text-[32px] font-bold text-white light:text-grayishyellow purple:text-yellow'>calc</h1>
